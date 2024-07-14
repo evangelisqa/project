@@ -12,7 +12,7 @@
   --paragraph-font: Urbanist, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #326273;  /* headlines on a white background */ 
+  --headline-color-on-white: #001021;  /* headlines on a white background */ 
   --headline-color-on-color: white; /* headlines on a colored background */ 
   --paragraph-color-on-white: #5c9ead; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
@@ -23,20 +23,6 @@
   --nav-hover-background-color: #396E94;
 }
 
-
-:root {
-  /* fonts */
-  --font-heading: Georgia, 'Times New Roman', Times, serif;
-  --font-page: Verdana, Geneva, Tahoma, sans-serif;
-
-  /* colors */
-  --top-color: #250001;
-  --top-color-light: #ccff33;
-  --text-light: white;
-  --bottom-color: #000000;
-  --bottom-color-light: #38b000;
-  --bottom-color-medium: #89ae9c;
-}
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
@@ -56,6 +42,10 @@ p {
 }
 h1, h2, h3,p{
      text-align: center;
+}
+h1{
+  background-color: var(--headline-color-on-white);
+  color: white;
 }
 img{
   height: 50%;
