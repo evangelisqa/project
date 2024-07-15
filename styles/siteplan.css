@@ -47,6 +47,9 @@ h1, h2, h3,p{
 h1{
   background-color: var(--headline-color-on-white);
   color: white;
+  height: 100px;
+  width: auto 0;
+  padding-top: 50px;
 }
 img{
   height: 50%;
