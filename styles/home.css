@@ -3,7 +3,7 @@
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #001021;
-  --secondary-color: #38b000;
+  --secondary-color: #004b23;
   --accent1-color: #ffffff;
   --accent2-color: #ccff33;
 
@@ -21,4 +21,7 @@
 
   --nav-hover-link-color:#eeeeee;
   --nav-hover-background-color: #396E94;
+}
+header{
+  background-color: var(--secondary-color);
 }
