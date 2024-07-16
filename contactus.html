@@ -5,26 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us Form</title>
+    <title>Contact Us Page</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Evangelis Albesa, Connect With Nature">
+    <meta name="author" content="Evangelis Albesa">
     <link rel="stylesheet" href="styles/contactus.css">
     <scrip src="scripts/contactus.js" defer ></script>
 </head>
 
 <body>
-    <div id="content">
-        <header>
-            <a id="logo_link" href="index.html">
-                <img class="logo" src="images/logo.jpeg"
-                    alt="logo icon">
-            </a>   
-            <nav>
-                <a href="home.html">Home</a>
-                <a href="#">Contact Us</a>
-                <a href="#">About Us</a>
-                <a href="#">Stories</a>
-            </nav>
-        </header>
-        
+    <header>
+    <nav>
+        <div class="logo"><h1>Nature</h1></div>
+        <div class="openMenu"><i class="fas fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Stories</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+        </ul>
+    </nav>
+</header>  
         <main class="contact-form">
             <div id="feedback"></div>
             <form action="/my-handling-form-page" method="post">
@@ -44,7 +45,10 @@
             </div>
         </main>
          <footer>
-           
+            <p>
+                &copy; <span id="currentyear"></span>  😽 Evangelis Albesa 😽  Canada
+            </p>
+            <p id="lastModified">Last Modification:</p>
         </footer>
    
  </body>
