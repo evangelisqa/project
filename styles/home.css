@@ -31,7 +31,15 @@ body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 p{
-  
+  text-align: center;
+  font-size: 25px;
+}
+div p{
+  margin-left: 70px;
+  margin-right: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  font-size: 25px;
 }
 nav{
   background: var(--secondary-color);
@@ -94,10 +102,12 @@ h2{
   font-size: 25px;
   margin-top: 40px;
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: 70px;
 }
-p{
-  margin: auto;
+footer{
+  background-color: #004b23;
+  color: #ffffff;
+ padding:1%;
 }
 @media(max-width: 800px){
   nav .mainMenu{
