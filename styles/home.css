@@ -30,6 +30,7 @@
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 nav{
   background: var(--secondary-color);
   color:#ffffff;
@@ -56,4 +57,44 @@ nav .openMenu{
   margin: 20px;
   display: none;
   cursor: pointer;
+}
+nav .logo{
+  margin: 6px;
+  font-size: 25px;
+  cursor: pointer;
+  font-family:fantasy;
+  margin-left: 20px;
+}
+@media(max-width: 800px){
+  nav .mainMenu{
+    height: 100wh;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 1s ease;
+    display:none;
+  }
+  nav .mainMenu .closeMenu{
+    display: block;
+    position: absolute;
+    top:20px;
+    right: 20px;
+  }
+  nav .openMenu{
+    display:block;
+  }
+  nav .mainMenu li a:hover{
+    background: none;
+    color:#e39774;
+    font-size: 1.6rem;
+  }
+  .icon i{
+    display: inline-block;
+    padding: 12px;
+  }
 }
