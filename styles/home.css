@@ -76,6 +76,18 @@ nav ul li a{
   margin-top: 25px;
   margin-bottom: 25px;
 }
+a img{
+  width: 450px;
+  height: 450px;
+  margin-left: 70px;
+}
+h2{
+  margin-bottom: 40px;
+  padding-top: 60%;
+  margin-left: 60px;
+  font-size: 40px;
+  font-family:fantasy
+}
 @media(max-width: 800px){
   nav .mainMenu{
     height: 100wh;
