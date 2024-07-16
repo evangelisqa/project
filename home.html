@@ -3,35 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connect With Nature</title>
+    <title>Hamburger Menu</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Evangelis Albesa, Connect With Nature">
     <meta name="author" content="Evangelis Albesa">
     <link rel="stylesheet" href="styles/home.css">
     <script src="scripts/home.js" defer></script>
 </head>
 <body>
-    <header>
-            <img src="images/logo.jpeg" alt="logo" class="logo">
-             <!--button for hamburger menu, to be visible only on mobile view-->
-             <div class="logo"></div>
-           <div class="hambutton id="hambutton">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-           </div>
-           
-          <!--navigation-->
-          <nav class="nav-links" id="nav-links">
-            <ul>
-            <li><a id="home-button" href='#'>Home</a></li>
-            <li><a id="contact-us-button" href='#'>Contact Us</a></li>
-            <li><a id="about-us-button" href='#'>About Us</a></li>
-            <li><a id="stories-button" href="#">Stories</a></li>
-              
-            </ul>
-          </nav>
-     
-    </header>
+    <nav>
+        <div class="logo"><h1>Nature</h1></div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Stories</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </span>
+        </ul>
+    </nav>
     <main>
         <img src="images/tulips.jpeg" alt="Home Image">
         <h2>Photo Gallery</h2>
