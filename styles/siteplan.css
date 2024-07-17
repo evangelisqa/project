@@ -28,12 +28,17 @@ body {
   margin: 20px;
   line-height: 1.6;
 }
+div .site-purpose{
+  text-align: left;
+}
 h1, h2 {
-  color: black;
+  color: white;
+  text-align: left;
 }
 p {
   color: #34495e;
-  font-style: var(--paragraph-font)
+  font-style: var(--paragraph-font);
+  font-size: 25px;
 }
 .color-sample {
   display: inline-block;
@@ -41,8 +46,14 @@ p {
   height: 20px;
   margin-right: 10px;
 }
-h1, h2, h3,p{
-     text-align: center;
+h1,h2, h3,p{
+  text-align: center;
+}
+.site-purpose p{
+  text-align: left;
+}
+.home p{
+  text-align: left;
 }
 h1{
   background-color: var(--headline-color-on-white);
@@ -81,6 +92,7 @@ nav{
 ul,li{
   list-style: none;
   text-align: center;
+  font-size: 25px;
 }
 footer{
   background-color: var(--bottom-color-light);
