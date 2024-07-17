@@ -6,6 +6,8 @@ document.getElementById("currentyear").textContent = currentYear;
 const lastModified = document.lastModified;
 document.getElementById("lastModified").textContent = "Last Modification: " + lastModified;
 
-document.getElementById('hambutton').addEventListener('click', function(){
-    document.getElementById('nav-links').classList.toggle('active');
-});
+const hamburger =
+document.querySelector('.hamburger');
+const menu =
+document.querySelector('.menu')
+

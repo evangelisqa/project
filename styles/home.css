@@ -22,6 +22,44 @@
   --nav-hover-link-color: #eeeeee;
   --nav-hover-background-color: #396E94;
 }
+h1{
+  color: #ffffff;
+  font-family: fantasy;
+  font-size: 30px;
+}
+header{
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+}
+
+.hamburger{
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  margin-left: 30px;
+}
+.menu .active{
+  display: block;
+}
+ul li a{
+  display: flex;
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+}
 *{
   box-sizing: border-box;
   margin: 0;
@@ -47,6 +85,7 @@ nav{
   color:#ffffff;
   display: flex;
   justify-content: space-between;
+  margin-left: 80px;
 }
 nav .mainMenu{
   display: flex;
@@ -77,10 +116,15 @@ nav .logo{
   margin-left: 30px;
   margin-top: 25px;
 }
-nav ul li a{
+ul li a{
+  display: flex;
   margin-right: 90px;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+li{
+  display: flex;
+  text-align: right;
 }
 .home img{
   float: right;
@@ -138,8 +182,3 @@ footer{
     color:#e39774;
     font-size: 1.6rem;
   }
-  .icon i{
-    display: inline-block;
-    padding: 12px;
-  }
-}

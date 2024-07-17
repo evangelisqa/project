@@ -29,16 +29,16 @@
     flex-direction: column;
     min-height: 100vh;
 }
-.logo{
-    font-family: fantasy;
-}
+
 header {
     background-color:var(--secondary-color);
     color: white;
     padding: 10px 0;
     text-align: center;
 }
-
+h1{
+    font-family:Arial, Helvetica, sans-serif
+}
 header nav ul {
     list-style: none;
     padding: 0;
@@ -63,7 +63,7 @@ header nav ul li a {
     width: 50%;
     max-width: 600px;
     margin: 20px auto;
-    box-sizing: border-box;
+    box-shadow: 1px 1px 10px 1px var(--secondary-color)
 }
 
 form h3 {
@@ -75,9 +75,12 @@ h2{
     margin-bottom: 2%;
     margin-left: 30px;
     margin-top: 40px;
+    font-size: 30px;
+    font-family:fantasy;
 }
 .form-group {
     margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .form-group label {
