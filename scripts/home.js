@@ -9,7 +9,7 @@ document.getElementById("lastModified").textContent = "Last Modification: " + la
 const hamburger = document.getElementById('hamburger');
 const mainMenu = document.getElementById('mainMenu');
 
-menu-container.addEventListener('click',() => {
+hamburger.addEventListener('click',() => {
     mainMenu.classList.toggle('active');
 });
 
