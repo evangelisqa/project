@@ -22,22 +22,14 @@
   --nav-hover-link-color: #eeeeee;
   --nav-hover-background-color: #396E94;
 }
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-h1{
-  color: #ffffff;
-  font-family: fantasy;
-  font-size: 30px;
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header{
   background-color: var(--secondary-color);
   display: flex;
   align-items: center;
 }
-
 .hamburger{
   background: none;
   border: none;
@@ -64,9 +56,27 @@ nav .mainMenu .active{
   width: 100%;
   height: 100vh;
   background-color:var(--nav-hover-background-color);
-  justify-content:center;
-  align-items: center;
+  
   z-index: 10;
+}
+nav .mainMenu li a{
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+h1{
+  color: #ffffff;
+  font-family: fantasy;
+  font-size: 30px;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 ul li a{
@@ -84,9 +94,7 @@ ul{
   margin: 0;
   padding: 0;
 }
-body{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 p{
   text-align: center;
   font-size: 25px;
@@ -108,15 +116,7 @@ nav .mainMenu{
   display: flex;
   list-style: none;
 }
-nav .mainMenu li a{
-  display: inline-block;
-  padding: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-  
-  font-size: 1.5rem;
-  color: #ffffff;
-}
+
 nav .mainMenu li a:hover{
   background: var(--paragraph-background-color);
   color: #001021;
@@ -189,6 +189,15 @@ footer{
    }
    nav .mainMenu.active{
     display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    justify-content: left;
+    margin-top: 50px;
+    
    }
   
   nav .mainMenu li a:hover{
