@@ -22,6 +22,11 @@
   --nav-hover-link-color: #eeeeee;
   --nav-hover-background-color: #396E94;
 }
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 h1{
   color: #ffffff;
   font-family: fantasy;
@@ -52,17 +57,18 @@ nav .mainMenu{
 }
 nav .mainMenu .active{
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   height: 100vh;
-  background-color: var(--secondary-color);
-  justify-content: center;
+  background-color:var(--nav-hover-background-color);
+  justify-content:center;
   align-items: center;
   z-index: 10;
 }
+
 ul li a{
   display: flex;
   text-decoration: none;
@@ -95,9 +101,7 @@ div p{
 }
 nav{
   background: var(--secondary-color);
-  color:#ffffff;
   display: flex;
-  justify-content: space-between;
   margin-left: 80px;
 }
 nav .mainMenu{
@@ -109,13 +113,20 @@ nav .mainMenu li a{
   padding: 15px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
+  
   font-size: 1.5rem;
+  color: #ffffff;
 }
 nav .mainMenu li a:hover{
   background: var(--paragraph-background-color);
+  color: #001021;
 }
-
+nav .openMenu{
+  font-size: 2rem;
+  margin: 1px;
+  display: none;
+  cursor: pointer;
+}
 nav .logo{
   margin: 6px;
   font-size: 20px;
@@ -149,7 +160,7 @@ h2{
   padding-top: 60%;
   margin-left: 60px;
   font-size: 40px;
-  font-family:fantasy
+  font-family:fantasy;
 }
 .desc{
   font-size: 25px;
@@ -181,8 +192,15 @@ footer{
    }
   
   nav .mainMenu li a:hover{
-    background:var(--paragraph-background-color);
+   
     color:black;
     font-size: 1.6rem;
+  }
+  nav .mainMenu li a {
+    font-size: 2rem;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #38b000;
+
   }
 }
