@@ -176,7 +176,7 @@ footer{
     z-index: 10;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+   
     transition: top 1s ease;
     display:none;
    }
