@@ -65,8 +65,17 @@ header nav ul li a {
     text-decoration: none;
     font-size: 20px;
 }
+img{
+    width: 100%;
+}
+h3{
+    text-align: left;
+    font-family:'Arial Narrow Bold', sans-serif;
+}
 nav .mainMenu{
-    display: none;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
 }
 nav .mainMenu.active{
     display: flex;
@@ -90,10 +99,7 @@ ul li a{
     padding: 0;
     margin: 0;
   }
-  nav .mainMenu li a:hover{
-    background: var(--paragraph-background-color);
-    color: #001021;
-  } 
+  
 nav .mainMenu ul li a{
     display: inline-block;
     padding: 15px;
@@ -102,9 +108,7 @@ nav .mainMenu ul li a{
     color: #ffffff;
     font-size: 1.5rem;
 }
- div p{
-    text-align: left;
-}
+
 footer{
     background-color: #004b23;
     color: #ffffff;
