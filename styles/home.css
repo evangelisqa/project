@@ -141,15 +141,14 @@ li{
   display: flex;
   text-align: right;
 }
-.home img{
+.gallery-item img{
   float: right;
-  width: 100%;
-  height: 100%;
+  width: 20%;
+  height: 40%;
 }
-a img{
-  width: 450px;
-  height: 450px;
-  margin-left: 70px;
+div .home img{
+  width: 100%;
+  height: 80%;
 }
 h2{
   margin-bottom: 40px;
