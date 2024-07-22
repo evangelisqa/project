@@ -13,5 +13,6 @@ hamburger.addEventListener('click',()=>{
 });
 
 const shareStoryBtn = document.querySelector('share-story-btn');
-shareStoryBtn.addEventListener('click',() =>)
-alert('Thank you for your interest in sharing your story! Please contact us for more detail.')
+shareStoryBtn.addEventListener('click',() =>{
+alert('Thank you for your interest in sharing your story! Please contact us for more detail.');
+});
