@@ -113,18 +113,15 @@ body{
     display: flex;
     text-align: right;
   }
-  
-
- .image-container{
+  .image-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
- }
- .image-container img{
+  }
+  .image-container img{
     width: 23%;
     margin: 1%;
- }
- 
+  }
  h1{
     color: white;
     font-family: fantasy;
@@ -168,9 +165,6 @@ footer p{
     font-size: 20px;
 }
 @media(max-width: 800px){
-    .gallery-container img{
-        width: 48%;
-    }
     nav .mainMenu{
       height: 100vh;
       position: fixed; 
@@ -205,8 +199,12 @@ footer p{
       background-color: #38b000;
     }
   }
-  @media (max-width:500px){
-    .gallery-container img {
-        width: 98%;
+  @media(max-width: 800px){
+    .gallery-item img{
+      width: 48%;
+    }
+  @media(max-width: 500px){
+    .gallery-item img{
+      width: 98%;
     }
   }

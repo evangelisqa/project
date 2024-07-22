@@ -136,26 +136,34 @@ body{
  }
  .images{
     flex: 1;
-    margin-right: 10px;
-   
+    width: 90%;
+    float: right;
+    padding-right: 20px;
+    
  }
  .images img{
     width: 100%;
     margin-bottom: 10px;
     float:right;
-    display: flex;
+    display: right;
+    width: 100%;
  }
  .text{
     flex: 2;
  }
- .text p{
+ div p {
     font-size: 1.6rem;
     margin-bottom: 20px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 80;
+    float: right;
+    margin-right: 25px;
+    text-align: left;
  }
- 
- .share-story-btn{
+ p{
+    text-align: center;
+ }
+ .share-button{
     display:block;
     margin: 20px auto;
     padding: 10px 20px;
@@ -166,7 +174,7 @@ body{
     border-radius: 5px;
     cursor: pointer;
  }
- .share-story-btn:hover{
+ .share-button:hover{
     background-color:var(--paragraph-color-on-white);
  }
  @media (max-width:800px){
