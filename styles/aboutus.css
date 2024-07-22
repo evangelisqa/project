@@ -114,18 +114,17 @@ body{
     text-align: right;
   }
   
-img{
-    width: 25%;
-    height: 600px;
-    display: flex;
-  }
+
  .image-container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
  }
  .image-container img{
-    margin:0;
-    display: flex;
+    width: 23%;
+    margin: 1%;
  }
+ 
  h1{
     color: white;
     font-family: fantasy;
@@ -169,6 +168,9 @@ footer p{
     font-size: 20px;
 }
 @media(max-width: 800px){
+    .gallery-container img{
+        width: 48%;
+    }
     nav .mainMenu{
       height: 100vh;
       position: fixed; 
@@ -191,11 +193,8 @@ footer p{
       width: 100%;
       justify-content: left;
       margin-top: 90px;
-      
      }
-    
     nav .mainMenu li a:hover{
-     
       color:black;
       font-size: 1.6rem;
     }
@@ -204,6 +203,10 @@ footer p{
       padding: 5px;
       border-radius: 10px;
       background-color: #38b000;
-  
+    }
+  }
+  @media (max-width:500px){
+    .gallery-container img {
+        width: 98%;
     }
   }

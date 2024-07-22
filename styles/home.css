@@ -56,7 +56,6 @@ nav .mainMenu .active{
   width: 100%;
   height: 100vh;
   background-color:var(--nav-hover-background-color);
-  
   z-index: 10;
 }
 nav .mainMenu li a{
@@ -89,11 +88,12 @@ ul{
   margin: 0;
 }
 p{
-  text-align: center;
+  text-align:left;
   font-size: 25px;
   font-weight: 50;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 div p{
   margin-left: 70px;
   margin-right: 70px;
@@ -141,10 +141,14 @@ li{
   display: flex;
   text-align: right;
 }
+.gallery-item{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .gallery-item img{
-  width: 22%;
-  height: 400px;
-  margin-left: 50px;
+  width: 23%;
+  margin: 1%;
 }
 .home img{
   width: 100%;
@@ -152,23 +156,20 @@ li{
 }
 h2{
   margin-bottom: 40px;
-  padding-top: 60%;
+ 
   margin-left: 60px;
   font-size: 40px;
   font-family:fantasy;
 }
-.desc{
-  font-size: 25px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  margin-left: 70px;
-}
 footer{
   background-color: #004b23;
   color: #ffffff;
- padding:1%;
+  padding:1%;
 }
 @media(max-width: 800px){
+  .gallery-item img{
+    width: 48%;
+  }
   nav .mainMenu{
     height: 100vh;
     position: fixed;
@@ -192,11 +193,9 @@ footer{
     width: 100%;
     justify-content: left;
     margin-top: 50px;
-    
    }
   
   nav .mainMenu li a:hover{
-   
     color:black;
     font-size: 1.6rem;
   }
@@ -205,6 +204,10 @@ footer{
     padding: 5px;
     border-radius: 10px;
     background-color: #38b000;
-
+  }
+}
+@media(max-width: 500px){
+  .gallery-item img{
+    width: 98%;
   }
 }
