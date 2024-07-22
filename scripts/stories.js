@@ -31,3 +31,8 @@ function adjustButtonSize(){
 }
 window.addEventListener('resize', adjustButtonSize);
 window.addEventListener('load', adjustButtonSize);
+
+document.getElementById('storyForm').addEventListener('submit',function(event){
+    event.preventDefault();
+    alert('Thank you for sharing your story');
+});

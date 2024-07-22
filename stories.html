@@ -45,6 +45,24 @@
          <img src="images/skmountain.jpeg" alt="mountain">
      </div>
     </div>
+    <div class="form-container">
+        <h3>Share Your Story</h3>
+        <form id="storyForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="story">Your Story:</label>
+            <textarea id="story" name="story" rows="6" required></textarea>
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+            <label>
+                <input type="checkbox" name="permission" required> I give permission to share my story.
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
       <button class="share-button">Share Your Story</button>
    </main> 
    <footer>
